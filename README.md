@@ -1,5 +1,5 @@
 **The Pushing Man** is a mechanical character, a souvenir. It is a man who is pushing something heavy and 
-it makes realistic movements. The engine of the mechanism is gears that can be rotated. 
+it makes realistic movements. The engine of the mechanism is gears that can be rotated by hand. 
 As gears are rotated the pushing man moves. To imagine that see below gif file.
  
 ### Partitions
@@ -28,6 +28,8 @@ left legs respectively.
 The hull is used as a bounds of the construction. All partitions are collected, and connected in the hull. 
 It is a special box with connectors and origins for gears. It is separated into two parts, the left and right parts. 
 Partitions are collected using screws and special pipes.
+
+![the_hull](./media/the_hull.png)
 
 ### References
 - Github repository of a mechanical character animator java program:  https://github.com/DOSLAN/Mechanical-Characters-animator

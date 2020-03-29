@@ -34,15 +34,15 @@ module Chehol(){
 
         translate([117, -1, 40])
         rotate(a=-90, v=[1,0,0])
-        cylinder(7, 2.1, 2.1, $fn=99);
+        cylinder(7, 2, 2, $fn=99);
 
         translate([181, -1, 40])
         rotate(a=-90, v=[1,0,0])
-        cylinder(7, 2.1, 2.1, $fn=99);
+        cylinder(7, 2, 2, $fn=99);
 
         translate([107, -1, 156])
         rotate(a=-90, v=[1,0,0])
-        cylinder(7, 2.1, 2.1, $fn=99);
+        cylinder(7, 2, 2, $fn=99);
 
         translate([68, -1, 78])
         rotate(a=-90, v=[1,0,0])
@@ -50,19 +50,19 @@ module Chehol(){
 
         translate([47, -1, 120])
         rotate(a=-90, v=[1,0,0])
-        cylinder(7, 2.1, 2.1, $fn=99);
+        cylinder(7, 2, 2, $fn=99);
 
         translate([36, -1, 149])
         rotate(a=-90, v=[1,0,0])
-        cylinder(7, 2.1, 2.1, $fn=99);
+        cylinder(7, 2, 2, $fn=99);
 
         translate([25, -1, 178])
         rotate(a=-90, v=[1,0,0])
-        cylinder(7, 2.1, 2.1, $fn=99);
+        cylinder(7, 2, 2, $fn=99);
 
         translate([25, -1, 318])
         rotate(a=-90, v=[1,0,0])
-        cylinder(7, 2.1, 2.1, $fn=99);
+        cylinder(7, 2, 2, $fn=99);
     }
 }
 module s2(){
@@ -88,10 +88,11 @@ module s3(){
     }
 }
 module s4(){
+
     difference(){
         union(){
-            cylinder(1, 8, 8, $fn=99);
-            cylinder(12, 2, 2, $fn=50);
+            cylinder(6, 8, 8, $fn=99);
+            cylinder(17, 2, 2, $fn=50);
         }
         translate([0,0,1.1])
         cylinder(11.1, 1.1, 1.1, $fn=50);
@@ -100,10 +101,22 @@ module s4(){
 translate([0,0,5])
 rotate(a=-90, v=[1,0,0])
 Chehol();
-translate([0,0,5])
-rotate(a=-90, v=[1,0,0])
-translate([270,0,0])
-Chehol();
+translate([0,-10,5])
+rotate(a=180, v=[1,0,0])
+difference(){
+    translate([0,0,5])
+    rotate(a=-90, v=[1,0,0])
+    Chehol();
+    
+    translate([181, 40, -1])
+    cylinder(7, 2.1, 2.1, $fn=99);
+
+    translate([25, 318, -1])
+    cylinder(7, 2.1, 2.1, $fn=99);
+
+    translate([107, 156, -1])
+    cylinder(7, 2.1, 2.1, $fn=99);   
+}
 
 translate([80, 200, 16])
 s2();
@@ -122,8 +135,26 @@ translate([220, 200, 10])
 rotate(a=90, v=[0,1,0])
 s3();
 
-translate([120, 90, 0])
+translate([117, 40, 0])
 s4();
 
-translate([150, 90, 0])
+translate([117, -50, 0])
 s4();
+
+translate([47, 120, 0])
+s4();
+
+translate([36, 149, 0])
+s4();
+
+translate([25, 178, 0])
+s4();
+
+translate([181, 40, 0])
+cylinder(48, 2, 2, $fn=99);
+
+translate([25, 318, 0])
+cylinder(48, 2, 2, $fn=99);
+
+translate([107, 156, 0])
+cylinder(47, 2, 2, $fn=99);
