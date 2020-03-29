@@ -15,7 +15,7 @@ Gears are the engine of the construction. Their dimensions and positions are wel
 makes all the movements of the character. There are four types of gears, a couple of gears to move legs, 
 a gear for rotating and its rotator, a gear to move the body, and two to connect other gears to each other. 
 
-![gears](./media/gears_scaled.png)
+![gears](./media/gears_updated_scaled.png)
 
 #### Bands
 Bands are special connectors that connect legs and the body with gears. There are three bands, 

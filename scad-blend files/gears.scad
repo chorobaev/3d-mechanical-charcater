@@ -136,33 +136,33 @@ module leg_gear() {
                 cylinder(h=10, r=1);
             }
         }
-        
-        translate([24, 0, 0]) {
-            difference() {
-                union() {
-                    cylinder(h=24, r=2);
-                    cylinder(h=16, r=4);
-                }
-                
-                translate([0, 0, 16])
-                cylinder(h=10, r=1);
-            }
-        }
     }
 }
 
 
 module rotating_gear() {
     union() {
+        translate([0,0,27])
+        rotate([0,180,0])
         spur_gear(1, 62, 10, 0, 20, 0, true);
         
-        cylinder(h=11, r=8);
+        translate([0,0,39])
+        spur_gear(1, 62, 10, 0, 20, 0, true);
+        
+        translate([0,0,16])
+        cylinder(h=34, r=8);
         difference() {
-            cylinder(h=27, r=4);
+            cylinder(h=66, r=4);
             
-            translate([0, 5, 23])
+            union(){
+            translate([0, 5, 61])
             rotate([90, 0, 0])
             cylinder(h=10, r=1.5);
+            
+            translate([0, 5, 5])
+            rotate([90, 0, 0])
+            cylinder(h=10, r=1.5);
+            }
         }
     }
 }
@@ -226,8 +226,14 @@ connector_gear();
 translate([70, 50, 0])
 rotater(50);
 
+translate([130, 50, 0])
+rotater(50);
+
 translate([90, 0, 0])
 rotating_gear();
 
 translate([160, 0, 0])
+leg_gear();
+
+translate([230, 0, 0])
 leg_gear();
