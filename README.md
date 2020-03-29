@@ -29,7 +29,7 @@ The hull is used as a bounds of the construction. All partitions are collected, 
 It is a special box with connectors and origins for gears. It is separated into two parts, the left and right parts. 
 Partitions are collected using screws and special pipes.
 
-![the_hull](./media/the_hull.png)
+![the_hull](./media/the_hull_scaled.png)
 
 ### References
 - Github repository of a mechanical character animator java program:  https://github.com/DOSLAN/Mechanical-Characters-animator
