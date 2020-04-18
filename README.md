@@ -33,6 +33,6 @@ Partitions are collected using screws and special pipes.
 
 ### References
 - Github repository of a mechanical character animator java program:  https://github.com/DOSLAN/Mechanical-Characters-animator
-- Other media file from the project creation process: https://drive.google.com/open?id=1imLWmjRsIfrUiP4G0gRbWdwJOhqf6U5a
+- Other media files from the project creation process: https://drive.google.com/open?id=1imLWmjRsIfrUiP4G0gRbWdwJOhqf6U5a
 
 Copyright (c) 2020 Nurbol Chorobaev, Doslan Zheksheev, Muhammed Alanov, Bekzhol Zholdubai uulu
